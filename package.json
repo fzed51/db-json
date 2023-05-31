@@ -15,8 +15,8 @@
   "scripts": {
     "lint": "tsc --noEmit",
     "build": "git clean -xf dist && tsc",
-    "publish:patch": "git diff-index --quiet HEAD -- && yarn build && yarn publish --patch",
-    "publish:minor": "git diff-index --quiet HEAD -- && yarn build && yarn publish --minor",
-    "publish:major": "git diff-index --quiet HEAD -- && yarn build && yarn publish --major"
+    "publish:patch": "git diff-index --quiet HEAD -- && yarn build && yarn publish --patch --access public",
+    "publish:minor": "git diff-index --quiet HEAD -- && yarn build && yarn publish --minor --access public",
+    "publish:major": "git diff-index --quiet HEAD -- && yarn build && yarn publish --major --access public"
   }
 }
