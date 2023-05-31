@@ -1,6 +1,6 @@
 {
-  "name": "db-json",
-  "version": "1.0.0",
+  "name": "@fzed51/db-json",
+  "version": "0.1.0",
   "description": "Enregistre des informations dans un fichier json",
   "main": "dist/DbJson.js",
   "repository": "https://github.com/fzed51/db-json.git",
