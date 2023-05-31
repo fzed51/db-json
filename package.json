@@ -1,14 +1,22 @@
 {
   "name": "@fzed51/db-json",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Enregistre des informations dans un fichier json",
-  "main": "dist/DbJson.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/fzed51/db-json.git",
-  "author": "Fabien Sanchez <fzed51+code@gmail.com>",
+  "author": "Fabien Sanchez <fzed51+git@gmail.com>",
   "license": "MIT",
   "private": false,
+  "type": "module",
   "devDependencies": {
     "@types/node": "^18.15",
     "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "lint": "tsc --noEmit",
+    "build": "git clean -xf dist && tsc",
+    "publish:patch": "git diff-index --quiet HEAD -- && yarn build && yarn publish --patch",
+    "publish:minor": "git diff-index --quiet HEAD -- && yarn build && yarn publish --minor",
+    "publish:major": "git diff-index --quiet HEAD -- && yarn build && yarn publish --major"
   }
 }

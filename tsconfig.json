@@ -1,21 +1,29 @@
 {
-    "compilerOptions": {
-      "target": "ESNext",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-      "lib": ["ESNext"],              /* Specify a set of bundled library declaration files that describe the target runtime environment. */
-      "jsx": "preserve",                                  /* Specify what JSX code is generated. */
-      "module": "ESNext",                                /* Specify what module code is generated. */
-      "rootDir": "./src",                                  /* Specify the root folder within your source files. */
-      "moduleResolution": "nodenext",                     /* Specify how TypeScript looks up a file from a given module specifier. */
-      "declaration": true,                                 /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
-      "sourceMap": true,                                   /* Create source map files for emitted JavaScript files. */
-      "outDir": "./dist",                                   /* Specify an output folder for all emitted files. */
-      "allowSyntheticDefaultImports": true,                /* Allow 'import x from y' when a module doesn't have a default export. */
-      "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
-      "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
-      "strict": true,                                      /* Enable all strict type-checking options. */
-      "alwaysStrict": true,                                /* Ensure 'use strict' is always emitted. */
-      "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-    },
-    "exclude": [
-    ]
-  }
+  "compilerOptions": {
+    /* Projects */
+    // "incremental": true,
+    /* Language and Environment */
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "jsx": "preserve",
+    /* Modules */
+    "module": "ESNext",
+    "rootDir": "./src",
+    "moduleResolution": "nodenext",
+    /* JavaScript Support */
+    /* Emit */
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    /* Interop Constraints */
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    /* Type Checking */
+    "strict": true,
+    "alwaysStrict": true,
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "exclude": []
+}

@@ -1,7 +1,7 @@
 import { existsSync, writeFile, readFile } from "fs";
 import { resolve } from "path";
 
-type DbJsonOptions = {
+export type DbJsonOptions = {
   forceCreate: boolean;
   logFullPath: boolean;
 };
