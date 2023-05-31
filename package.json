@@ -1,0 +1,14 @@
+{
+  "name": "db-json",
+  "version": "1.0.0",
+  "description": "Enregistre des informations dans un fichier json",
+  "main": "dist/DbJson.js",
+  "repository": "https://github.com/fzed51/db-json.git",
+  "author": "Fabien Sanchez <fzed51+code@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/node": "^18.15",
+    "typescript": "^5.0.4"
+  }
+}
