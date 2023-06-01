@@ -3,11 +3,11 @@
     /* Projects */
     // "incremental": true,
     /* Language and Environment */
-    "target": "ESNext",
+    "target": "ES2015",
     "lib": ["ESNext"],
     "jsx": "preserve",
     /* Modules */
-    "module": "ESNext",
+    "module": "CommonJS",
     "rootDir": "./src",
     "moduleResolution": "nodenext",
     /* JavaScript Support */
