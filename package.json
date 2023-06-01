@@ -1,6 +1,6 @@
 {
   "name": "@fzed51/db-json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Enregistre des informations dans un fichier json",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
