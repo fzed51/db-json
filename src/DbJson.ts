@@ -81,49 +81,51 @@ export class DbJson<T> {
    * @returns T[]
    */
   async add(element: T): Promise<T[]> {
-    return new Promise(async (resolve, reject) => {
-      try {
-        const data = await this.get();
-        const newData = [...data, element];
-        resolve(this.set(newData));
-      } catch (error) {
-        reject(error);
-      }
+    return new Promise((resolve, reject) => {
+      this.get()
+        .then((data) => {
+          const newData = [...data, element];
+          resolve(this.set(newData));
+        })
+        .catch((error) => reject(error));
     });
   }
 
   /**
    * Remplace des éléments
+   * @param element T
+   * @param filter (e:T, i:number) => boolean
+   * @returns T[]
    */
   async replace(
     element: T,
     filter: (e: T, i: number) => boolean
   ): Promise<T[]> {
-    return new Promise(async (resolve, reject) => {
-      try {
-        const data = await this.get();
-        const newData = data.map((e: T, i: number) =>
-          filter(e, i) ? element : e
-        );
-        resolve(this.set(newData));
-      } catch (error) {
-        reject(error);
-      }
+    return new Promise((resolve, reject) => {
+      this.get()
+        .then((data) => {
+          const newData = data.map((e: T, i: number) =>
+            filter(e, i) ? element : e
+          );
+          resolve(this.set(newData));
+        })
+        .catch((error) => reject(error));
     });
   }
 
   /**
    * Remplace des éléments
+   * @param filter (e:T, i:number) => boolean
+   * @returns T[]
    */
   async delete(filter: (e: T, i: number) => boolean): Promise<T[]> {
-    return new Promise(async (resolve, reject) => {
-      try {
-        const data = await this.get();
-        const newData = data.filter((e: T, i: number) => !filter(e, i));
-        resolve(this.set(newData));
-      } catch (error) {
-        reject(error);
-      }
+    return new Promise((resolve, reject) => {
+      this.get()
+        .then((data) => {
+          const newData = data.filter((e: T, i: number) => !filter(e, i));
+          resolve(this.set(newData));
+        })
+        .catch((error) => reject(error));
     });
   }
 }
