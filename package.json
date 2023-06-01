@@ -3,11 +3,11 @@
   "version": "1.0.1",
   "description": "Enregistre des informations dans un fichier json",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/fzed51/db-json.git",
   "author": "Fabien Sanchez <fzed51+git@gmail.com>",
   "license": "MIT",
   "private": false,
-  "type": "module",
   "engines": {
     "node": ">=18.15.0"
   },
