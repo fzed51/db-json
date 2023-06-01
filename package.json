@@ -8,6 +8,9 @@
   "license": "MIT",
   "private": false,
   "type": "module",
+  "engines": {
+    "node": ">=18.15.0"
+  },
   "devDependencies": {
     "@types/node": "^18.15",
     "typescript": "^5.0.4"
