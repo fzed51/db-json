@@ -8,3 +8,5 @@ logs
 # Source
 /src/
 /tsconfig.json
+/.eslintrc.json
+/.prettierrc
